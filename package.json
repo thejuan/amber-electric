@@ -1,6 +1,10 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "lint": "yarn lerna run lint",
+    "tsc": "yarn lerna run tsc"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.3.0",
     "@typescript-eslint/parser": "^3.3.0",

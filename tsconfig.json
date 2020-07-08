@@ -7,7 +7,7 @@
         "sourceMap": true,
         "target": "es2018",
         "moduleResolution": "node",
-        "module": "commonjs",
+        "module": "ES6",
         "lib": [
             "es2018"
         ],
