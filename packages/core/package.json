@@ -19,5 +19,10 @@
   },
   "bugs": {
     "url": "https://github.com/thejuan/amber-electric/issues"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "jest": "^26.1.0"
   }
 }
