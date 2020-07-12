@@ -1,0 +1,28 @@
+{
+  "name": "google-home",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Adam <adam@koalasafe.com>",
+  "homepage": "https://github.com/thejuan/amber-electric#readme",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejuan/amber-electric.git"
+  },
+  "scripts": {
+    "lint": "eslint 'lib/**/*.{js,ts,tsx}'",
+    "tsc": "tsc --build",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/thejuan/amber-electric/issues"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "jest": "^26.1.0"
+  }
+}
