@@ -1,6 +1,6 @@
 {
-  "name": "google-home",
-  "version": "0.0.0",
+  "name": "@amber-electric/google-home",
+  "version": "0.1.0",
   "description": "",
   "author": "Adam <adam@koalasafe.com>",
   "homepage": "https://github.com/thejuan/amber-electric#readme",
@@ -21,11 +21,12 @@
     "url": "https://github.com/thejuan/amber-electric/issues"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.4",
+    "@types/node": "^14.0.22",
     "jest": "^26.1.0"
   },
   "dependencies": {
-    "@google-cloud/dialogflow": "^3.1.0"
+    "actions-on-google": "^2.12.0",
+    "@amber-electric/core": "^0.1.0"
   }
 }

@@ -3,7 +3,7 @@ import { PriceData } from "./Types";
 export class AmberPrices {
   constructor(private priceData: PriceData) {}
 
-  public async getCurrentPrice(): Promise<any> {
+  public getCurrentPrice(): number {
     const prices = this.priceData;
     const { totalfixedKWHPrice, lossFactor } = prices.staticPrices.E1;
     const actualPeriods = prices.variablePricesAndRenewables.filter((p) => p.periodType === "ACTUAL");

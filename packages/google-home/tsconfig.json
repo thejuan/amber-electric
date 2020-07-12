@@ -4,5 +4,6 @@
     "outDir": "build",
     "rootDir": "./lib"
   },
-  "exclude": ["bin/*", "**/node_modules", "build/*"]
+  "exclude": ["bin/*", "**/node_modules", "build/*"],
+  "references": [{ "path": "../core" }]
 }

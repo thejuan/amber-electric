@@ -1,6 +1,7 @@
 {
-  "name": "core",
-  "version": "0.0.0",
+  "name": "@amber-electric/core",
+  "version": "0.1.0",
+  "main": "build/index",
   "description": "",
   "author": "Adam <adam@koalasafe.com>",
   "homepage": "https://github.com/thejuan/amber-electric#readme",
@@ -21,8 +22,7 @@
     "url": "https://github.com/thejuan/amber-electric/issues"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.4",
     "jest": "^26.1.0"
   }
 }
