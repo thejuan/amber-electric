@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": "./lib"
+  },
+  "exclude": ["bin/*", "**/node_modules", "build/*"],
+  "references": [{ "path": "../google-home" }]
+}
