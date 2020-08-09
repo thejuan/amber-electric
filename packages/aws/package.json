@@ -2,6 +2,9 @@
   "name": "@amber-electric/aws",
   "version": "0.1.0",
   "description": "",
+  "engines": {
+    "node": "12"
+  },
   "author": "Adam <adam@koalasafe.com>",
   "homepage": "https://github.com/thejuan/amber-electric#readme",
   "license": "MIT",
@@ -15,6 +18,7 @@
   "scripts": {
     "lint": "eslint 'lib/**/*.{js,ts,tsx}'",
     "tsc": "tsc --build",
+    "build": "tsc --build",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
@@ -23,10 +27,14 @@
   "devDependencies": {
     "@types/jest": "^26.0.4",
     "@types/node": "^14.0.22",
-    "jest": "^26.1.0"
+    "jest": "^26.1.0",
+    "serverless": "^1.78.1",
+    "serverless-jetpack": "^0.10.7",
+    "serverless-offline": "^6.5.0",
+    "serverless-scriptable-plugin": "^1.0.5"
   },
   "dependencies": {
-    "actions-on-google": "^2.12.0",
-    "@amber-electric/core": "^0.1.0"
+    "@amber-electric/core": "^0.1.0",
+    "actions-on-google": "^2.12.0"
   }
 }

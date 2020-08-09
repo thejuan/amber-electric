@@ -1,26 +1,21 @@
 {
-    "compilerOptions": {
-        "composite": true,
-        "preserveConstEnums": true,
-        "preserveSymlinks": true,
-        "strictNullChecks": true,
-        "sourceMap": true,
-        "target": "es2018",
-        "moduleResolution": "node",
-        "module": "ES6",
-        "lib": [
-            "es2018"
-        ],
-        "noImplicitAny": true,
-        "noUnusedLocals": true,
-        "removeComments": true,
-        "skipLibCheck": true,
-        "experimentalDecorators": true,
-        "resolveJsonModule": true,
-        "esModuleInterop": true
-    },
-    "exclude": [
-        "node_modules",
-        "build"
-    ]
+  "compilerOptions": {
+    "composite": true,
+    "preserveConstEnums": true,
+    "preserveSymlinks": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "target": "es2019",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "lib": ["es2019"],
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "build"]
 }

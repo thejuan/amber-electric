@@ -1,6 +1,7 @@
 {
   "name": "@amber-electric/google-home",
   "version": "0.1.0",
+  "main": "build/index",
   "description": "",
   "author": "Adam <adam@koalasafe.com>",
   "homepage": "https://github.com/thejuan/amber-electric#readme",

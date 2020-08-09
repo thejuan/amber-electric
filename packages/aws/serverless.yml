@@ -1,0 +1,47 @@
+service: amber
+plugins:
+  - serverless-jetpack # packager, mainly used to support our workspace hoisting setup
+  - serverless-scriptable-plugin # run hooks during serverless lifecycle
+  - serverless-offline # testing
+
+provider:
+  name: aws
+  stage: ${opt:stage, 'local'}
+  runtime: nodejs12.x
+  region: ap-southeast-2
+
+package:
+  include:
+    - build/**
+
+custom:
+  jetpack:
+    base: ../../../
+    preInclude:
+      - "!**" # Start with absolutely nothing (typical in monorepo scenario)
+
+  scriptHooks:
+    # These are all the places that jetpack could be invoked that would
+    # ensure the TS files are built right before jetpack kicks in.
+    before:package:createDeploymentArtifacts: yarn build
+    before:package:function:package: yarn build
+    before:jetpack:package:package: yarn build
+    before:invoke:local:invoke: if [ -z "$SKIP_BUILD" ]; then yarn build; else echo "Skipping Build"; fi
+
+functions:
+  AmberAgent:
+    handler: build/Handler.amberAgent
+    events:
+      - http:
+          path: amber
+          method: post
+          cors:
+            maxAge: 43200
+  Ping:
+    handler: build/Handler.ping
+    events:
+      - http:
+          path: ping
+          method: get
+          cors:
+            maxAge: 43200
